@@ -70,7 +70,13 @@
 
   <div class="info-message">
     <span class="brigada-name">💋 BRIGADA SEX 💋</span><br>
-    Colectivo arte + activismo, espacio seguro de exploración sensual, liberación corporal y arte digital.<br>
+    En BrigadaSex no solo somos un grupo, somos una familia.
+    Aquí no importa de dónde vengas ni lo que hayas pasado, siempre hay alguien dispuesto a escucharte, apoyarte y levantarte cuando lo necesitas.
+
+    Este espacio ha crecido gracias a cada persona que ha estado, que ha aportado su tiempo, su energía y su buena vibra. Entre todos hemos construido algo más grande que un simple grupo: un lugar donde podemos sanar, reír, compartir y ser nosotros mismos sin miedo.
+
+    Gracias por estar aquí, por confiar, por quedarse y por hacer de BrigadaSex un hogar para muchos.
+    Esto no sería lo mismo sin ustedes.<br>
     <strong>#SomosBrigadaSex</strong> — placer, arte y revolución.
   </div>
   <footer><i class="fas fa-copyright"></i> Brigada Sex · Comunidad libre · +18</footer>
@@ -79,7 +85,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   // FECHA DE CREACIÓN (Cámbiala si quieres: año, mes-1, día)
-  const CREATION_DATE = new Date(2023, 1, 20, 20, 0, 0);
+  const CREATION_DATE = new Date(2026, 3, 9, 0, 0, 0);
   
   function updateCounter() {
     const diff = new Date() - CREATION_DATE;
@@ -94,11 +100,42 @@
   setInterval(updateCounter, 1000);
 
   // TUS FOTOS Y VIDEOS (Cámbialos aquí)
-  const mediaItems = [
-    { type: 'image', url: 'https://picsum.photos/id/20/800/600', title: '🔥 Brigada en acción' },
-    { type: 'image', url: 'https://picsum.photos/id/169/800/600', title: '🎭 Performance' },
-    { type: 'video', url: 'https://www.w3schools.com/html/mov_bbb.mp4', title: '📹 Manifiesto' },
-  ];
+ // TUS FOTOS Y VIDEOS PARA EL CARRUSEL
+const mediaItems = [
+  // ========== FOTOS ==========
+  { type: 'image', url: 'imagenes/img1.jpg', title: '📸 lulu y alpa ;3' },
+  { type: 'image', url: 'imagenes/img2.jpg', title: '📸 DJ felnal' },
+  { type: 'image', url: 'imagenes/img3.jpg', title: '📸 las vaquitas' },
+  { type: 'image', url: 'imagenes/img4.jpg', title: '📸 vaquitas 2' },
+  { type: 'image', url: 'imagenes/img5.png', title: '📸 Momento especial' },
+  { type: 'image', url: 'imagenes/img6.jpg', title: '📸 noche de estrellas' },
+  { type: 'image', url: 'imagenes/img7.png', title: '🎭 la gang' },
+  { type: 'image', url: 'imagenes/img8.png', title: '✨ Energía pura' },
+  { type: 'image', url: 'imagenes/img9.png', title: '💜 Comunidad unida' },
+  { type: 'image', url: 'imagenes/img10.png', title: '🔥 la gang lechera' },
+  { type: 'image', url: 'imagenes/img11.png', title: '🎉 Celebración' },
+  { type: 'image', url: 'imagenes/img12.png', title: '🌟 Luna' },
+  { type: 'image', url: 'imagenes/img13.png', title: '💃 El tio viruz' },
+  { type: 'image', url: 'imagenes/img14.png', title: '🎨 La jojo' },
+  { type: 'image', url: 'imagenes/img15.png', title: '📸 la planta' },
+  { type: 'image', url: 'imagenes/img16.png', title: '✨ la planta y su mujer' },
+  { type: 'image', url: 'imagenes/img17.png', title: '💪 la papa' },
+  { type: 'image', url: 'imagenes/img18.png', title: '🎭 oliver tu papa' },
+  { type: 'image', url: 'imagenes/img19.png', title: '🔥 Pasión' },
+  { type: 'image', url: 'imagenes/img20.png', title: '📸 noche de sleep' },
+  { type: 'image', url: 'imagenes/img21.png', title: '💜 Amor y arte' },
+  { type: 'image', url: 'imagenes/img22.png', title: '🎉 Fiesta brigada' },
+  { type: 'image', url: 'imagenes/img23.png', title: '🌟 Estrella brigada' },
+  { type: 'image', url: 'imagenes/img24.png', title: '📸 Captura especial' },
+  { type: 'image', url: 'imagenes/img25.png', title: '✨ beso de 3?' },
+  { type: 'image', url: 'imagenes/img26.png', title: '💪 Fuerza colectiva' },
+  { type: 'image', url: 'imagenes/img27.png', title: '🎭 Performance única' },
+  { type: 'image', url: 'imagenes/img28.jpg', title: '🔥 Última foto' },
+  
+  // ========== VIDEOS ==========
+  { type: 'video', url: 'imagenes/video6 (1).mp4', title: '🎬 Video exclusivo 1' },
+  { type: 'video', url: 'imagenes/video7.mp4', title: '🎬 Video exclusivo 2' },
+];
   
   const wrapper = document.getElementById('swiper-wrapper');
   mediaItems.forEach(item => {

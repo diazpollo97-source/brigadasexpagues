@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brigada Sex | Comunidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: linear-gradient(145deg, #0b0a0e, #1a1722); font-family: 'Inter', sans-serif; color: #f0eef7; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .hero { text-align: center; background: rgba(0,0,0,0.35); backdrop-filter: blur(8px); border-radius: 3rem; padding: 2rem; border: 1px solid rgba(255,75,130,0.3); }
+    .logo-fijo { width: 100px; height: 100px; border-radius: 30px; background: linear-gradient(135deg, #ff4b82, #ff9f4a); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; overflow: hidden; box-shadow: 0 10px 25px rgba(255,75,130,0.4); }
+    .logo-fijo i { font-size: 4.2rem; color: white; }
+    .logo-fijo img { width: 100%; height: 100%; object-fit: cover; }
+    .group-name { font-size: 3rem; font-weight: 800; background: linear-gradient(120deg, #FFE6F0, #FFB3C6, #FF8BA7); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .tagline { font-size: 1.2rem; color: #d9ccec; background: rgba(20,15,35,0.6); padding: 0.8rem 1.5rem; border-radius: 60px; display: inline-block; }
+    .counter-card { background: rgba(20,18,30,0.7); backdrop-filter: blur(12px); border-radius: 2rem; padding: 1.5rem; margin: 2rem 0; text-align: center; border: 1px solid rgba(255,105,150,0.5); }
+    .counter-title { font-size: 1.3rem; color: #ffbfd5; margin-bottom: 1rem; }
+    .counter-digits { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .time-unit { background: #0a0812; border-radius: 1.5rem; padding: 0.8rem 1.2rem; min-width: 100px; }
+    .time-number { font-size: 3.2rem; font-weight: 800; background: linear-gradient(145deg,#fff,#ffb7cc); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .unit-label { font-size: 0.8rem; text-transform: uppercase; color: #b9a9da; }
+    .section-title { font-size: 2rem; font-weight: 700; margin: 2rem 0 1rem; border-left: 6px solid #ff4b82; padding-left: 20px; }
+    .swiper-slide { background: rgba(0,0,0,0.45); border-radius: 1.8rem; overflow: hidden; }
+    .swiper-slide img, .swiper-slide video { width: 100%; max-height: 460px; object-fit: contain; }
+    .media-caption { background: linear-gradient(to top, #000000cc, transparent); padding: 1rem; text-align: center; }
+    .info-message { background: #1f1b2bdd; border-radius: 2rem; padding: 2rem; margin: 2rem 0; border-left: 5px solid #ff6a92; text-align: center; }
+    .brigada-name { font-weight: 800; font-size: 1.5rem; background: linear-gradient(135deg,#FFB347,#FF6B8B); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    footer { text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #3f3753; font-size: 0.8rem; }
+    @media (max-width: 680px) { .group-name { font-size: 2rem; } .time-number { font-size: 2rem; } .time-unit { min-width: 70px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <div class="logo-fijo">
+      <!-- ========================================= -->
+      <!-- CAMBIA AQUÍ TU LOGO (SOLO TÚ PUEDES)      -->
+      <!-- ========================================= -->
+      
+      <!-- Opción 1: Ícono (borra esta línea si usas imagen) -->
+      <img src= "imagenes/logobrigadasex.png" alt="Logo Brigadasex">
+      <!-- Opción 2: Imagen tuya (descomenta y borra la línea de arriba) -->
+      <!-- <img src="imagenes/mi-logo.png" alt="Logo Brigada Sex"> -->
+    </div>
+    <h1 class="group-name">BRIGADA SEX</h1>
+    <div class="tagline">🔥 Poder, Placer y Revolución del Deseo</div>
+  </div>
+
+  <div class="counter-card">
+    <div class="counter-title">📆 COMUNIDAD ACTIVA DESDE</div>
+    <div class="counter-digits">
+      <div class="time-unit"><span class="time-number" id="days">0</span><div class="unit-label">DÍAS</div></div>
+      <div class="time-unit"><span class="time-number" id="hours">0</span><div class="unit-label">HORAS</div></div>
+      <div class="time-unit"><span class="time-number" id="minutes">0</span><div class="unit-label">MINUTOS</div></div>
+      <div class="time-unit"><span class="time-number" id="seconds">0</span><div class="unit-label">SEGUNDOS</div></div>
+    </div>
+  </div>
+
+  <div class="section-title"><i class="fas fa-images"></i> GALERÍA BRIGADA</div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="swiper-wrapper"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="info-message">
+    <span class="brigada-name">💋 BRIGADA SEX 💋</span><br>
+    Colectivo arte + activismo, espacio seguro de exploración sensual, liberación corporal y arte digital.<br>
+    <strong>#SomosBrigadaSex</strong> — placer, arte y revolución.
+  </div>
+  <footer><i class="fas fa-copyright"></i> Brigada Sex · Comunidad libre · +18</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // FECHA DE CREACIÓN (Cámbiala si quieres: año, mes-1, día)
+  const CREATION_DATE = new Date(2023, 1, 20, 20, 0, 0);
+  
+  function updateCounter() {
+    const diff = new Date() - CREATION_DATE;
+    if (diff <= 0) return;
+    const s = Math.floor(diff / 1000);
+    document.getElementById('days').innerText = Math.floor(s / 86400);
+    document.getElementById('hours').innerText = String(Math.floor((s % 86400) / 3600)).padStart(2,'0');
+    document.getElementById('minutes').innerText = String(Math.floor((s % 3600) / 60)).padStart(2,'0');
+    document.getElementById('seconds').innerText = String(s % 60).padStart(2,'0');
+  }
+  updateCounter();
+  setInterval(updateCounter, 1000);
+
+  // TUS FOTOS Y VIDEOS (Cámbialos aquí)
+  const mediaItems = [
+    { type: 'image', url: 'https://picsum.photos/id/20/800/600', title: '🔥 Brigada en acción' },
+    { type: 'image', url: 'https://picsum.photos/id/169/800/600', title: '🎭 Performance' },
+    { type: 'video', url: 'https://www.w3schools.com/html/mov_bbb.mp4', title: '📹 Manifiesto' },
+  ];
+  
+  const wrapper = document.getElementById('swiper-wrapper');
+  mediaItems.forEach(item => {
+    const slide = document.createElement('div');
+    slide.className = 'swiper-slide';
+    slide.innerHTML = (item.type === 'image' ? `<img src="${item.url}" loading="lazy">` : `<video controls><source src="${item.url}"></video>`) + `<div class="media-caption">${item.title}</div>`;
+    wrapper.appendChild(slide);
+  });
+  
+  new Swiper('.mySwiper', { loop: true, spaceBetween: 20, slidesPerView: 1, pagination: { el: '.swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, autoplay: { delay: 4000 } });
+</script>
+</body>
+</html>

@@ -2,65 +2,285 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrigadaSex | Comunidad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Brigada Sex | Comunidad +18</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: linear-gradient(145deg, #0b0a0e, #1a1722); font-family: 'Inter', sans-serif; color: #f0eef7; }
-    .container { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem; }
-    .hero { text-align: center; background: rgba(0,0,0,0.35); backdrop-filter: blur(8px); border-radius: 3rem; padding: 2rem; border: 1px solid rgba(255,75,130,0.3); }
-    .logo-fijo { width: 100px; height: 100px; border-radius: 30px; background: linear-gradient(135deg, #ff4b82, #ff9f4a); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; overflow: hidden; box-shadow: 0 10px 25px rgba(255,75,130,0.4); }
-    .logo-fijo i { font-size: 4.2rem; color: white; }
-    .logo-fijo img { width: 100%; height: 100%; object-fit: cover; }
-    .group-name { font-size: 3rem; font-weight: 800; background: linear-gradient(120deg, #FFE6F0, #FFB3C6, #FF8BA7); background-clip: text; -webkit-background-clip: text; color: transparent; }
-    .tagline { font-size: 1.2rem; color: #d9ccec; background: rgba(20,15,35,0.6); padding: 0.8rem 1.5rem; border-radius: 60px; display: inline-block; }
-    .counter-card { background: rgba(20,18,30,0.7); backdrop-filter: blur(12px); border-radius: 2rem; padding: 1.5rem; margin: 2rem 0; text-align: center; border: 1px solid rgba(255,105,150,0.5); }
-    .counter-title { font-size: 1.3rem; color: #ffbfd5; margin-bottom: 1rem; }
-    .counter-digits { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-    .time-unit { background: #0a0812; border-radius: 1.5rem; padding: 0.8rem 1.2rem; min-width: 100px; }
-    .time-number { font-size: 3.2rem; font-weight: 800; background: linear-gradient(145deg,#fff,#ffb7cc); background-clip: text; -webkit-background-clip: text; color: transparent; }
-    .unit-label { font-size: 0.8rem; text-transform: uppercase; color: #b9a9da; }
-    .section-title { font-size: 2rem; font-weight: 700; margin: 2rem 0 1rem; border-left: 6px solid #ff4b82; padding-left: 20px; }
-    .swiper-slide { background: rgba(0,0,0,0.45); border-radius: 1.8rem; overflow: hidden; }
-    .swiper-slide img, .swiper-slide video { width: 100%; max-height: 460px; object-fit: contain; }
-    .media-caption { background: linear-gradient(to top, #000000cc, transparent); padding: 1rem; text-align: center; }
-    .info-message { background: #1f1b2bdd; border-radius: 2rem; padding: 2rem; margin: 2rem 0; border-left: 5px solid #ff6a92; text-align: center; }
-    .brigada-name { font-weight: 800; font-size: 1.5rem; background: linear-gradient(135deg,#FFB347,#FF6B8B); background-clip: text; -webkit-background-clip: text; color: transparent; }
-    footer { text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #3f3753; font-size: 0.8rem; }
-    @media (max-width: 680px) { .group-name { font-size: 2rem; } .time-number { font-size: 2rem; } .time-unit { min-width: 70px; } }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #0b0a0e 0%, #1a1722 100%);
+      font-family: 'Inter', sans-serif;
+      color: #f0eef7;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      border-radius: 3rem;
+      padding: 2rem 1.5rem;
+      border: 1px solid rgba(255, 75, 130, 0.3);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-area {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-fijo {
+      width: 100px;
+      height: 100px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #ff4b82, #ff9f4a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(255, 75, 130, 0.4);
+      overflow: hidden;
+    }
+    
+    .logo-fijo i {
+      font-size: 4.2rem;
+      color: white;
+      filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.3));
+    }
+    
+    .logo-fijo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .group-name {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(120deg, #FFE6F0, #FFB3C6, #FF8BA7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+      margin: 0.5rem 0 0.75rem;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #d9ccec;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.4;
+      background: rgba(20, 15, 35, 0.6);
+      padding: 0.8rem 1.5rem;
+      border-radius: 60px;
+      display: inline-block;
+      backdrop-filter: blur(4px);
+    }
+
+    .counter-card {
+      background: rgba(20, 18, 30, 0.7);
+      backdrop-filter: blur(12px);
+      border-radius: 2rem;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0 3rem;
+      border: 1px solid rgba(255, 105, 150, 0.5);
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .counter-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #ffbfd5;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .counter-digits {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .time-unit {
+      background: #0a0812;
+      border-radius: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      min-width: 100px;
+      box-shadow: 0 8px 0 #2a1e2c;
+    }
+
+    .time-number {
+      font-size: 3.2rem;
+      font-weight: 800;
+      font-family: monospace;
+      background: linear-gradient(145deg, #fff, #ffb7cc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 1;
+    }
+
+    .unit-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #b9a9da;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 2rem 0 1.2rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 6px solid #ff4b82;
+      padding-left: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      padding: 20px 0 40px;
+      border-radius: 2rem;
+    }
+
+    .swiper-slide {
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+      border-radius: 1.8rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 12px 25px -12px black;
+    }
+
+    .swiper-slide img, .swiper-slide video {
+      width: 100%;
+      height: auto;
+      max-height: 460px;
+      object-fit: contain;
+      background: #0e0b16;
+      display: block;
+    }
+
+    .media-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, #000000cc, transparent);
+      padding: 1rem 0.8rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #fff2f5;
+      font-weight: 500;
+      pointer-events: none;
+    }
+
+    .info-message {
+      background: #1f1b2bdd;
+      border-radius: 2rem;
+      padding: 2rem;
+      margin: 2rem 0 1rem;
+      border-left: 5px solid #ff6a92;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .brigada-name {
+      font-weight: 800;
+      font-size: 1.5rem;
+      background: linear-gradient(135deg, #FFB347, #FF6B8B);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px dashed #3f3753;
+      font-size: 0.8rem;
+      color: #b3a7d0;
+    }
+
+    @media (max-width: 680px) {
+      .container { padding: 1.2rem; }
+      .group-name { font-size: 2rem; }
+      .time-number { font-size: 2rem; }
+      .time-unit { min-width: 70px; padding: 0.5rem 0.8rem; }
+      .counter-digits { gap: 0.6rem; }
+    }
   </style>
 </head>
 <body>
 <div class="container">
+  <!-- HERO con logo FIJO -->
   <div class="hero">
-    <div class="logo-fijo">
-      <!-- ========================================= -->
-      <!-- CAMBIA AQUÍ TU LOGO (SOLO TÚ PUEDES)      -->
-      <!-- ========================================= -->
-      
-      <!-- Opción 1: Ícono (borra esta línea si usas imagen) -->
-      <img src= "imagenes/logobrigadasex.png" alt="Logo Brigadasex">
-      <!-- Opción 2: Imagen tuya (descomenta y borra la línea de arriba) -->
-      <!-- <img src="imagenes/mi-logo.png" alt="Logo Brigada Sex"> -->
+    <div class="logo-area">
+      <div class="logo-fijo" id="logoFijo">
+        <!-- CAMBIA AQUÍ TU LOGO -->
+        <i class="fas fa-users"></i>
+        <!-- <img src="imagenes/logobrigadasex.png" alt="Logo Brigada Sex"> -->
+      </div>
     </div>
-    <h1 class="group-name">BRIGADASEX</h1>
-    <div class="tagline">🔥 Poder, Placer y Amistad</div>
+    <h1 class="group-name">BRIGADA SEX</h1>
+    <div class="tagline">
+      <i class="fas fa-crown" style="margin-right: 8px;"></i> Poder, Placer y Revolución del Deseo
+    </div>
   </div>
 
+  <!-- CONTADOR -->
   <div class="counter-card">
-    <div class="counter-title">📆 COMUNIDAD ACTIVA DESDE</div>
-    <div class="counter-digits">
+    <div class="counter-title">
+      <i class="fas fa-hourglass-half"></i> 
+      <span>COMUNIDAD ACTIVA DESDE</span>
+      <i class="fas fa-calendar-alt"></i>
+    </div>
+    <div class="counter-digits" id="contadorReloj">
       <div class="time-unit"><span class="time-number" id="days">0</span><div class="unit-label">DÍAS</div></div>
       <div class="time-unit"><span class="time-number" id="hours">0</span><div class="unit-label">HORAS</div></div>
       <div class="time-unit"><span class="time-number" id="minutes">0</span><div class="unit-label">MINUTOS</div></div>
       <div class="time-unit"><span class="time-number" id="seconds">0</span><div class="unit-label">SEGUNDOS</div></div>
     </div>
+    <div style="font-size:0.7rem; margin-top:1rem; opacity:0.7;">
+      <i class="fas fa-heart" style="color:#ff6b8b;"></i> Desde el 9 de abril de 2026
+    </div>
   </div>
 
-  <div class="section-title"><i class="fas fa-images"></i> GALERÍA BRIGADA</div>
+  <!-- CARRUSEL -->
+  <div class="section-title">
+    <i class="fas fa-images"></i> GALERÍA BRIGADA
+    <span style="font-size: 0.9rem; background: #ff4b8233; padding: 4px 12px; border-radius: 30px;">🔥 contenido carrusel</span>
+  </div>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper" id="swiper-wrapper"></div>
     <div class="swiper-pagination"></div>
@@ -68,19 +288,16 @@
     <div class="swiper-button-prev"></div>
   </div>
 
+  <!-- MENSAJE DESCRIPTIVO -->
   <div class="info-message">
     <span class="brigada-name">💋 BRIGADA SEX 💋</span><br>
-    En BrigadaSex no solo somos un grupo, somos una familia.
-    Aquí no importa de dónde vengas ni lo que hayas pasado, siempre hay alguien dispuesto a escucharte, apoyarte y levantarte cuando lo necesitas.
-
-    Este espacio ha crecido gracias a cada persona que ha estado, que ha aportado su tiempo, su energía y su buena vibra. Entre todos hemos construido algo más grande que un simple grupo: un lugar donde podemos sanar, reír, compartir y ser nosotros mismos sin miedo.
-
-    Gracias por estar aquí, por confiar, por quedarse y por hacer de BrigadaSex un hogar para muchos.
-    Esto no sería lo mismo sin ustedes.<br>
+    Colectivo arte + activismo, espacio seguro de exploración sensual, liberación corporal y arte digital. 
+    Nacimos para romper tabúes, empoderar deseos y construir comunidad sin prejuicios. 
+    Aquí compartimos miradas, performances y material exclusivo de nuestras experiencias. 
     <strong>#SomosBrigadaSex</strong> — placer, arte y revolución.
   </div>
-  
-  <!-- ====== ACA PEGAS EL CÓDIGO DE FUNDADORES ====== -->
+
+  <!-- SECCIÓN FUNDADORXS -->
   <div class="info-message" style="background: #1f1b2bdd; backdrop-filter: blur(12px); border-left: 5px solid #ff6a92; text-align: center;">
     <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">
       <i class="fas fa-crown" style="color: #ffd700;"></i> 
@@ -95,7 +312,7 @@
         <div style="width: 90px; height: 90px; background: linear-gradient(135deg, #ff4b82, #ff9f4a); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(255, 75, 130, 0.3);">
           <i class="fas fa-star" style="font-size: 2.5rem; color: white;"></i>
         </div>
-        <h3 style="color: #ffb7cc; font-size: 1.2rem;">OLiver</h3>
+        <h3 style="color: #ffb7cc; font-size: 1.2rem;">Nombre 1</h3>
         <p style="font-size: 0.8rem; color: #b9a9da;">🎭 Rol</p>
       </div>
       
@@ -103,7 +320,7 @@
         <div style="width: 90px; height: 90px; background: linear-gradient(135deg, #ff9f4a, #ff6b8b); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(255, 159, 74, 0.3);">
           <i class="fas fa-moon" style="font-size: 2.5rem; color: white;"></i>
         </div>
-        <h3 style="color: #ffb7cc; font-size: 1.2rem;">FunkHurst</h3>
+        <h3 style="color: #ffb7cc; font-size: 1.2rem;">Nombre 2</h3>
         <p style="font-size: 0.8rem; color: #b9a9da;">🌙 Rol</p>
       </div>
       
@@ -111,7 +328,7 @@
         <div style="width: 90px; height: 90px; background: linear-gradient(135deg, #ff6b8b, #ffb347); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(255, 107, 139, 0.3);">
           <i class="fas fa-feather-alt" style="font-size: 2.5rem; color: white;"></i>
         </div>
-        <h3 style="color: #ffb7cc; font-size: 1.2rem;">Pollo</h3>
+        <h3 style="color: #ffb7cc; font-size: 1.2rem;">Nombre 3</h3>
         <p style="font-size: 0.8rem; color: #b9a9da;">🪶 Rol</p>
       </div>
       
@@ -123,76 +340,159 @@
       <i class="fas fa-quote-right" style="margin-left: 5px; color: #ff6b8b;"></i>
     </p>
   </div>
-  <!-- ====== FIN DEL CÓDIGO DE FUNDADORES ====== -->
+
+  <!-- TABLA DE PARTICIPANTES -->
+  <div class="info-message" style="background: #1f1b2bdd; backdrop-filter: blur(12px); border-left: 5px solid #ff6a92; text-align: center; padding: 2rem;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">
+      <i class="fas fa-trophy" style="color: #ffd700;"></i> 
+      <span style="background: linear-gradient(135deg, #FFB347, #FF6B8B); background-clip: text; -webkit-background-clip: text; color: transparent;">Ranking Brigada</span>
+      <i class="fas fa-star" style="color: #ffd700;"></i>
+    </h2>
+    <p style="color: #d9ccec; margin-bottom: 1.5rem; font-size: 0.9rem;">Puntos acumulados por cada participante</p>
+    
+    <div style="overflow-x: auto; border-radius: 1rem;">
+      <table style="width: 100%; border-collapse: collapse; background: rgba(10, 8, 18, 0.9); border-radius: 1rem; overflow: hidden;">
+        <thead>
+          <tr><th style="padding: 1rem; text-align: center; background: linear-gradient(135deg, #ff4b82, #ff9f4a); color: white; font-weight: 700;">🏆 Participante</th>
+            <th style="padding: 1rem; text-align: center; background: linear-gradient(135deg, #ff4b82, #ff9f4a); color: white; font-weight: 700;">⭐ Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">nei</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">3</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">fajas marica</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">3</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">tuti</td><td style="padding: 0.8rem; text-align: center; color: #ffd700; font-weight: 800;">7</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">araky</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">3</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">plantas</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">4</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">julian</td><td style="padding: 0.8rem; text-align: center; color: #ffd700; font-weight: 800;">8</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">ale</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">4</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">astréd</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">3</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">gg new</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">2</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">alpa</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">6</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255, 105, 150, 0.2);"><td style="padding: 0.8rem; text-align: center; color: #ffb7cc;">dante</td><td style="padding: 0.8rem; text-align: center; color: #d9ccec; font-weight: 600;">4</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #b9a9da;">
+      <i class="fas fa-chart-line"></i> Los puntos se actualizan según participación en eventos
+    </p>
+  </div>
 
   <footer>
-    <i class="fas fa-copyright"></i> Brigada Sex · Comunidad libre · +18
+    <i class="fas fa-copyright"></i> Brigada Sex · Comunidad libre y vibrante · +18
   </footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  // FECHA DE CREACIÓN (Cámbiala si quieres: año, mes-1, día)
+  // FECHA DE CREACIÓN (9 de abril de 2026)
   const CREATION_DATE = new Date(2026, 3, 9, 0, 0, 0);
   
   function updateCounter() {
-    const diff = new Date() - CREATION_DATE;
-    if (diff <= 0) return;
-    const s = Math.floor(diff / 1000);
-    document.getElementById('days').innerText = Math.floor(s / 86400);
-    document.getElementById('hours').innerText = String(Math.floor((s % 86400) / 3600)).padStart(2,'0');
-    document.getElementById('minutes').innerText = String(Math.floor((s % 3600) / 60)).padStart(2,'0');
-    document.getElementById('seconds').innerText = String(s % 60).padStart(2,'0');
+    const now = new Date();
+    const diffMs = now - CREATION_DATE;
+    if (diffMs <= 0) {
+      document.getElementById('days').innerText = '0';
+      document.getElementById('hours').innerText = '0';
+      document.getElementById('minutes').innerText = '0';
+      document.getElementById('seconds').innerText = '0';
+      return;
+    }
+    const totalSeconds = Math.floor(diffMs / 1000);
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    
+    document.getElementById('days').innerText = days;
+    document.getElementById('hours').innerText = hours < 10 ? '0'+hours : hours;
+    document.getElementById('minutes').innerText = minutes < 10 ? '0'+minutes : minutes;
+    document.getElementById('seconds').innerText = seconds < 10 ? '0'+seconds : seconds;
   }
   updateCounter();
   setInterval(updateCounter, 1000);
 
-  // TUS FOTOS Y VIDEOS (Cámbialos aquí)
- // TUS FOTOS Y VIDEOS PARA EL CARRUSEL
-const mediaItems = [
-  // ========== FOTOS ==========
-  { type: 'image', url: 'imagenes/img1.jpg', title: '📸 jojo y alpa ;3' },
-  { type: 'image', url: 'imagenes/img2.jpg', title: '📸 DJ felnal' },
-  { type: 'image', url: 'imagenes/img3.jpg', title: '📸 las vaquitas' },
-  { type: 'image', url: 'imagenes/img4.jpg', title: '📸 vaquitas 2' },
-  { type: 'image', url: 'imagenes/img5.png', title: '📸 Momento especial' },
-  { type: 'image', url: 'imagenes/img6.jpg', title: '📸 noche de estrellas' },
-  { type: 'image', url: 'imagenes/img7.png', title: '🎭 la gang' },
-  { type: 'image', url: 'imagenes/img8.png', title: '✨ Energía pura' },
-  { type: 'image', url: 'imagenes/img9.png', title: '💜 Comunidad unida' },
-  { type: 'image', url: 'imagenes/img10.png', title: '🔥 la gang lechera' },
-  { type: 'image', url: 'imagenes/img11.png', title: '🎉 Celebración' },
-  { type: 'image', url: 'imagenes/img12.png', title: '🌟 Luna' },
-  { type: 'image', url: 'imagenes/img13.png', title: '💃 El tio viruz' },
-  { type: 'image', url: 'imagenes/img14.png', title: '🎨 La jojo' },
-  { type: 'image', url: 'imagenes/img15.png', title: '📸 la planta' },
-  { type: 'image', url: 'imagenes/img16.png', title: '✨ la planta y araky' },
-  { type: 'image', url: 'imagenes/img17.png', title: '💪 la papa' },
-  { type: 'image', url: 'imagenes/img18.png', title: '🎭 oliver tu papa' },
-  { type: 'image', url: 'imagenes/img19.png', title: '🔥 Pasión' },
-  { type: 'image', url: 'imagenes/img20.png', title: '📸 noche de sleep' },
-  { type: 'image', url: 'imagenes/img21.png', title: '💜 Amor y arte' },
-  { type: 'image', url: 'imagenes/img22.png', title: '🎉 Fiesta brigada' },
-  { type: 'image', url: 'imagenes/img23.png', title: '🌟 Estrella brigada' },
-  { type: 'image', url: 'imagenes/img24.png', title: '📸 Captura especial' },
-  { type: 'image', url: 'imagenes/img25.png', title: '✨ beso de 3?' },
-  { type: 'image', url: 'imagenes/img26.png', title: '💪 Fuerza colectiva' },
-  { type: 'image', url: 'imagenes/img27.png', title: '🎭 Performance única' },
-  { type: 'image', url: 'imagenes/img28.jpg', title: '🔥 Última foto' },
+  // TUS FOTOS Y VIDEOS PARA EL CARRUSEL
+  const mediaItems = [
+    { type: 'image', url: 'imagenes/img1.jpg', title: '📸 Brigada 1' },
+    { type: 'image', url: 'imagenes/img2.jpg', title: '📸 Brigada 2' },
+    { type: 'image', url: 'imagenes/img3.jpg', title: '📸 Brigada 3' },
+    { type: 'image', url: 'imagenes/img4.jpg', title: '📸 Brigada 4' },
+    { type: 'image', url: 'imagenes/img5.png', title: '📸 Brigada 5' },
+    { type: 'image', url: 'imagenes/img6.jpg', title: '📸 Brigada 6' },
+    { type: 'image', url: 'imagenes/img7.png', title: '📸 Brigada 7' },
+    { type: 'image', url: 'imagenes/img8.png', title: '📸 Brigada 8' },
+    { type: 'image', url: 'imagenes/img9.png', title: '📸 Brigada 9' },
+    { type: 'image', url: 'imagenes/img10.png', title: '📸 Brigada 10' },
+    { type: 'image', url: 'imagenes/img11.png', title: '📸 Brigada 11' },
+    { type: 'image', url: 'imagenes/img12.png', title: '📸 Brigada 12' },
+    { type: 'image', url: 'imagenes/img13.png', title: '📸 Brigada 13' },
+    { type: 'image', url: 'imagenes/img14.png', title: '📸 Brigada 14' },
+    { type: 'image', url: 'imagenes/img15.png', title: '📸 Brigada 15' },
+    { type: 'image', url: 'imagenes/img16.png', title: '📸 Brigada 16' },
+    { type: 'image', url: 'imagenes/img17.png', title: '📸 Brigada 17' },
+    { type: 'image', url: 'imagenes/img18.png', title: '📸 Brigada 18' },
+    { type: 'image', url: 'imagenes/img19.png', title: '📸 Brigada 19' },
+    { type: 'image', url: 'imagenes/img20.png', title: '📸 Brigada 20' },
+    { type: 'image', url: 'imagenes/img21.png', title: '📸 Brigada 21' },
+    { type: 'image', url: 'imagenes/img22.png', title: '📸 Brigada 22' },
+    { type: 'image', url: 'imagenes/img23.png', title: '📸 Brigada 23' },
+    { type: 'image', url: 'imagenes/img24.png', title: '📸 Brigada 24' },
+    { type: 'image', url: 'imagenes/img25.png', title: '📸 Brigada 25' },
+    { type: 'image', url: 'imagenes/img26.png', title: '📸 Brigada 26' },
+    { type: 'image', url: 'imagenes/img27.png', title: '📸 Brigada 27' },
+    { type: 'image', url: 'imagenes/img28.jpg', title: '📸 Brigada 28' },
+    { type: 'video', url: 'imagenes/video6.mp4', title: '🎬 Video Brigada 1' },
+    { type: 'video', url: 'imagenes/video7.mp4', title: '🎬 Video Brigada 2' },
+  ];
   
-  // ========== VIDEOS ==========
-  { type: 'video', url: 'imagenes/video6 (1).mp4', title: '🎬 Video exclusivo 1' },
-  { type: 'video', url: 'imagenes/video7.mp4', title: '🎬 Video exclusivo 2' },
-];
+  const swiperWrapper = document.getElementById('swiper-wrapper');
+  if (swiperWrapper) {
+    mediaItems.forEach(item => {
+      const slideDiv = document.createElement('div');
+      slideDiv.className = 'swiper-slide';
+      let mediaHtml = '';
+      if (item.type === 'image') {
+        mediaHtml = `<img src="${item.url}" alt="${item.title}" loading="lazy">`;
+      } else {
+        mediaHtml = `<video controls preload="metadata" playsinline><source src="${item.url}" type="video/mp4">Tu navegador no soporta video.</video>`;
+      }
+      mediaHtml += `<div class="media-caption">${item.title}</div>`;
+      slideDiv.innerHTML = mediaHtml;
+      swiperWrapper.appendChild(slideDiv);
+    });
+  }
   
-  const wrapper = document.getElementById('swiper-wrapper');
-  mediaItems.forEach(item => {
-    const slide = document.createElement('div');
-    slide.className = 'swiper-slide';
-    slide.innerHTML = (item.type === 'image' ? `<img src="${item.url}" loading="lazy">` : `<video controls><source src="${item.url}"></video>`) + `<div class="media-caption">${item.title}</div>`;
-    wrapper.appendChild(slide);
+  let swiperInstance = null;
+  function initSwiper() {
+    if (swiperInstance) swiperInstance.destroy(true, true);
+    swiperInstance = new Swiper('.mySwiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      centeredSlides: true,
+      pagination: { el: '.swiper-pagination', clickable: true, dynamicBullets: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
+      breakpoints: { 640: { slidesPerView: 1.2 }, 1024: { slidesPerView: 1.5 } },
+      grabCursor: true,
+    });
+  }
+  
+  setTimeout(() => { initSwiper(); }, 100);
+  
+  window.addEventListener('load', () => {
+    updateCounter();
+    if(swiperInstance) swiperInstance.update();
+    setTimeout(() => { if(swiperInstance) swiperInstance.update(); }, 200);
   });
   
-  new Swiper('.mySwiper', { loop: true, spaceBetween: 20, slidesPerView: 1, pagination: { el: '.swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, autoplay: { delay: 4000 } });
+  if (swiperInstance) {
+    swiperInstance.on('slideChange', function () {
+      const allVideos = document.querySelectorAll('.swiper-slide video');
+      allVideos.forEach(video => { if(video && !video.paused) video.pause(); });
+    });
+  }
 </script>
 </body>
 </html>
